@@ -1,0 +1,358 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Pravega Bespoke Lounge</title>
+<meta name="description" content="OpenFooter jQuery Metro Style Demo" />
+
+
+<link href='http://fonts.googleapis.com/css?family=Open+Sans|Wire+One' rel='stylesheet' type='text/css' />
+
+<meta name="viewport" content="width=device-width, user-scalable=no" />
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="css/font-awesome.min.css" type="text/css" />
+
+<!-- Some Style for Demo -->
+<link rel="stylesheet" href="css/global-demo.css" type="text/css" />
+
+
+<!-- OpenFooter CSS Pack -->
+<link rel="stylesheet" href="css/openfooter.css" type="text/css" />
+<link href="css/main.css" rel="stylesheet" type="text/css" />
+<link href="css/main1.css" rel="stylesheet" type="text/css" />
+<link href="css/main4.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/mian.css">
+	<script src="js/vendor/modernizr-2.6.2.min.js"></script>
+<!-- IE 8 -->
+<!--[if lt IE 9]>
+<link rel="stylesheet" href="css/fix-ie8.css" type="text/css" />
+<![endif]-->
+
+<link rel="shortcut icon" href="images/favicon.ico">
+
+
+<!-- Start jQuery Library -->
+
+<!--[if !IE]> -->
+<script type="text/javascript" src="js/jquery/jquery.min.2.1.0.js"></script>
+<!-- <![endif]-->
+
+<!--[if gte IE 9]>
+<script type="text/javascript" src="js/jquery/jquery.min.2.1.0.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+<script type="text/javascript" src="js/jquery/jquery.min.1.11.js"></script>
+<![endif]-->
+
+<!-- End jQuery Library -->
+
+
+<!-- MouseWheel Plugin -->
+<script type="text/javascript" src="js/mousewheel/jquery.mousewheel.min.js"></script> 
+
+
+<!-- OpenFooter jQuery Plugin-->
+<script type="text/javascript" src="js/openfooter.dev.js"></script>
+<script type="text/javascript" src="js/price_change.js"></script> 
+<script type="text/javascript" src="js/text_change.js"></script> 
+
+<!-- Call OpenFooter jQuery Plugin -->
+<script type="text/javascript">
+ var image_tracker = '0';
+ var price_change= 0;
+ var source=document.getElementById("design");
+ source.href="images/car.png";
+  function change(){
+  var source=document.getElementById("design");
+  var image = document.getElementById('car');
+  image.src ='images/car.png';
+  image_tracker = '0';
+  source.href="images/car.png";
+  }
+  function change1(){
+  var source=document.getElementById("design");
+  var image = document.getElementById('car');
+  source.href="images/car1.png";
+  image.src ='images/car1.png';
+  image_tracker = '1';
+  
+  }
+  function change2(){
+  var source=document.getElementById("design");
+  var image = document.getElementById('car');
+  image.src ='images/car2.png';
+  image_tracker = '2';
+  source.href="images/car2.png";
+  
+  }
+  function change3(){
+  var source=document.getElementById("design");
+  var image = document.getElementById('car');
+  image.src ='images/car3.png';
+  image_tracker = '3';
+  source.href="images/car3.png";
+  
+  }
+  function change_rim1(){
+  var source=document.getElementById("design");
+  var image = document.getElementById('car');
+  if(image_tracker=='0'){
+  source.href="images/car.png";
+  image.src='images/car.png';
+  image_tracker='0';
+  }
+  if(image_tracker=='1'){
+  source.href="images/car1.png";
+  image.src='images/car1.png';
+  image_tracker='1';
+  }
+  if(image_tracker=='2'){
+  source.href="images/car2.png";
+  image.src='images/car2.png';
+  image_tracker='2';
+  }
+  if(image_tracker=='3'){
+  source.href="images/car3.png";
+  image.src='images/car3.png';
+  image_tracker='3';
+  }
+  
+  }
+  function change_rim2(){
+  var source=document.getElementById("design");
+  var image = document.getElementById('car');
+  
+  if(image_tracker=='0'){
+  source.href="images/red_blue/car_m.png";
+  image.src='images/red_blue/car_m.png';
+  image_tracker='0';
+  }
+  if(image_tracker=='1'){
+  source.href="images/orange_white/car_m.png";
+  image.src='images/orange_white/car_m.png';
+  image_tracker='1';
+  }
+  if(image_tracker=='2'){
+  source.href="images/black_white/car_m.png";
+  image.src='images/black_white/car_m.png';
+  image_tracker='2';
+  }
+  if(image_tracker=='3'){
+  source.href="images/yellow_black/car_m.png";
+  image.src='images/yellow_black/car_m.png';
+  image_tracker='3';
+  }
+  }
+  function change_rim3(){
+  var source=document.getElementById("design");
+  var image = document.getElementById('car');
+  if(image_tracker=='0'){
+  source.href="images/red_blue/car_c.png";
+  image.src='images/red_blue/car_c.png';
+  image_tracker='0';
+  }
+  if(image_tracker=='1'){
+  source.href="images/orange_white/car_c.png";
+  image.src='images/orange_white/car_c.png';
+  image_tracker='1';
+  }
+  if(image_tracker=='2'){
+  source.href="images/black_white/car_c.png";
+  image.src='images/black_white/car_c.png';
+  image_tracker='2';
+  }
+  if(image_tracker=='3'){
+  source.href="images/yellow_black/car_c.png";
+  image.src='images/yellow_black/car_c.png';
+  image_tracker='3';
+  }
+  }
+  
+	</script>
+<style>
+html {
+height:100%;
+background: url(images/demo/coffee-bg.jpg) ;
+}
+</style>
+
+ 
+</head>
+<body>
+
+<div id="demo-content">
+
+	<div id="loader-wrapper">
+			<div id="loader"></div>
+
+			<div class="loader-section section-left"></div>
+            <div class="loader-section section-right"></div>
+
+		</div> 
+			
+<div id="main" role="main">
+            <ul class="menu">
+                <li style=" background: #b53d3d; opacity: 0.8;"><a style=" color: #f2f2f2;" >MSRP &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$15000</a>
+                <li><a>Base MSRP &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$15000</a></li>
+                <li><a>Factory-Installed &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$<span id="cost">0.00</span></a></li>
+                <li><a>Service Charge  &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $<span id="tax">1606.80</span></a></li>
+                <li><a>Total MSRP       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$<span id="total">14606.80</span></a></li>
+                </li>
+                
+               
+            </ul>
+ </div>
+ 
+ <div id="main4" role="main">
+            <ul class="menu4">
+                <li><a>Rims &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span id="component_rim">OZ-Aluminium</span>&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+                <li><a>Steering  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span id="component_steering">Sparco-R 325</span>&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+                <li><a>Tyres &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span id="component_tyre">Continental</span>&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+                <li><a>Muffler &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span id="component_muffler">Sound-Akropovic 1</span>&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+                <li><a>DAQ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span id="component_daq"> Kit1</span>&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+				<li><a>Dampers &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <span id="component_damper">Tanner</span>&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+				<li><a>ECU &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span id="component_ecu">PE3-IG001</span>&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+				
+                </li>
+                
+               
+            </ul>
+ </div>
+
+ 
+<div class='heading' style=" background: #b53d3d; opacity: 0.95;" id="info">Welcome to Bespoke Lounge</div>
+<div class='description'  style=" background: #ffffff; opacity: 0.9;">
+<a style=" color: black;" id="info_1">The Bespoke Lounge is a one stop destination for all your customization needs. We have a huge 
+
+array of options available to suit your requirements. Here you can fine tune your car to your tailor 
+
+made specifications. 
+
+More speed? Better comfort? Sexy body? We have it all covered. Just sit back and look on as the car 
+
+of your dreams comes to life in front of your eyes.
+
+‘BESPOKE LOUNGE- Your Comfort Zone’.</a>  
+</div>		
+<div class='part' style=" background: #ffffff; opacity: 0.9;"><img src="images/default.jpg" id="component" width="90%"style=" padding-left:5%; padding-top:7%;" align="center"></img></div>
+<div class='car'>
+<a>
+<img src="images/car.png" alt="img01" id="car">
+ </a>
+</div>
+<div class='car'>
+<a>
+<img src="images/components/tyre/continental.png" alt="img01" id="tyre">
+ </a>
+</div>
+<img src="images/logo.png" alt="logo" width="25%" style="   position: fixed; left: 500px;   top: 38px;   z-index: -2; opacity: .2;">
+
+<div class='button' style=" "><a href="images/car.png" id="design" download="YourDesign" >Save my Design</a></div>
+<div class='button1' style=" "> Share my Design</div>
+<div class="container" id="main" role="main">
+            <ul class="menu1">
+			<li ><a href="index.html">Home</a></li>
+               <li><a style="border-left: 1px solid #545353;">Vinyls</a>
+                    <ul class="submenu1" style=" top: -500%;">
+                        <li ><a>Submenu </a></li>
+                        <li onclick="change();"><a>Red Blue</a></li>
+                        <li onclick="change1();"><a>Orange White</a></li>
+                        <li onclick="change2();"><a>Black White</a></li>
+						<li onclick="change3();"><a>Yellow Black</a></li>
+                        
+                    </ul> 
+                </li>
+                <li><a style="border-left: 1px solid #545353;">Rims</a>
+                    <ul class="submenu1" style=" top: -400%;">
+                        <li><a>Submenu a</a></li>
+                        <li><a onclick="change_rim1(); change_price_rim(1); change_text_rim(1); change_price_total();">OZ-Aluminium</a></li>
+                        <li><a onclick="change_rim2(); change_price_rim(2); change_text_rim(2); change_price_total();">OZ-Magnesium</a></li>
+                        <li><a onclick="change_rim3(); change_price_rim(3); change_text_rim(3); change_price_total();">Carbon Fibre</a></li>
+                        
+                    </ul> 
+                </li>
+                <li class="active"><a style="border-left: 1px solid #545353;" href="#s2">Steering Wheel</a>
+                    <ul class="submenu1" style=" top: -700%;">
+                        <li><a >Submenu a</a></li>
+                        <li><a onclick="change_price_steering(1); change_text_steering(1); change_price_total();">Sparco-R 325</a></li>
+                        <li><a onclick="change_price_steering(2); change_text_steering(2); change_price_total();">Sparco-Nascar</a></li>
+                        <li><a onclick="change_price_steering(3); change_text_steering(3); change_price_total();">Sparco-P 260</a></li>
+						<li><a onclick="change_price_steering(4); change_text_steering(4); change_price_total();">Sparco-385</a></li>
+                        <li><a onclick="change_price_steering(5); change_text_steering(5); change_price_total();">Sparco-P 270</a></li>
+                        <li><a onclick="change_price_steering(6); change_text_steering(6); change_price_total();">Custom</a></li>
+                        
+                    </ul>
+                </li>
+                <li><a href="#" style="border-left: 1px solid #545353;">Tyres</a>
+                    <ul class="submenu1">
+                        <li><a href="#">Submenu a</a></li>
+                        <li><a onclick="change_price_tyre(1); change_text_tyre(1); change_price_total();">GoodYear</a></li>
+                        <li><a onclick="change_price_tyre(2); change_text_tyre(2); change_price_total();">Continental</a></li>
+                        <li><a onclick="change_price_tyre(3); change_text_tyre(3); change_price_total();">Hoosier</a></li>
+                       
+                    </ul>
+                </li>
+				<li><a href="#" style="border-left: 1px solid #545353;">Muffler</a>
+                    <ul class="submenu1" style=" top: -500%;">
+                        <li><a href="#">Submenu a</a></li>
+                        <li><a onclick="change_price_muffler(1); change_text_muffler(1); change_price_total();">Sound-Akrapovic 1</a></li>
+						<li><a onclick="change_price_muffler(2); change_text_muffler(2); change_price_total();">Sound-Akrapovic 2</a></li>
+						<li><a onclick="change_price_muffler(3); change_text_muffler(3); change_price_total();">Sound-Akrapovic 3</a></li>
+                        <li><a onclick="change_price_muffler(4); change_text_muffler(4); change_price_total();">Custom </a></li>
+                    </ul>
+                </li>
+				<li><a href="#" style="border-left: 1px solid #545353;">DAQ</a>
+                    <ul class="submenu1" style=" top: -600%;">
+                        <li><a href="#">Submenu a</a></li>
+                        <li><a onclick="change_price_daq(1); change_text_daq(1); change_price_total();">Kit-1</a></li>
+                        <li><a onclick="change_price_daq(2); change_text_daq(2); change_price_total();">Kit-2</a></li>
+                        <li><a onclick="change_price_daq(3); change_text_daq(3); change_price_total();">Kit-3</a></li>
+						<li><a onclick="change_price_daq(4); change_text_daq(4); change_price_total();">Kit-4</a></li>
+						<li><a onclick="change_price_daq(5); change_text_daq(5); change_price_total();">Kit-5</a></li>
+                        
+                    </ul>
+                </li>
+				
+				<li><a href="#" style="border-left: 1px solid #545353;">Dampers</a>
+                    <ul class="submenu1" style=" top: -600%;">
+                        <li><a href="#">Submenu a</a></li>
+                        <li><a onclick="change_price_damper(1); change_text_damper(1); change_price_total();">Tanner</a></li>
+                        <li><a onclick="change_price_damper(2); change_text_damper(2); change_price_total();">Ohlins-Group N/R4</a></li>
+                        <li><a onclick="change_price_damper(3); change_text_damper(3); change_price_total();">Ohlins-TTX36 Inline</a></li>
+						<li><a onclick="change_price_damper(4); change_text_damper(4); change_price_total();">Ohlins-ILX-Series</a></li>
+						<li><a onclick="change_price_damper(5); change_text_damper(5); change_price_total();">Penske-8760</a></li>
+                    </ul>
+                </li>
+				<li><a href="#" style="border-left: 1px solid #545353;">ECU</a>
+                    <ul class="submenu1" style=" top: -700%;">
+                        <li><a href="#">Submenu a</a></li>
+            
+						<li><a onclick="change_price_ecu(1); change_text_ecu(1); change_price_total();">PE3-IG001</a></li>
+						<li><a onclick="change_price_ecu(2); change_text_ecu(2); change_price_total();">PE3-8400A</a></li>
+					    <li><a onclick="change_price_ecu(3); change_text_ecu(3); change_price_total();">Motec-M400</a></li>
+                        <li><a onclick="change_price_ecu(4); change_text_ecu(4); change_price_total();">Motec-M600</a></li>
+                        <li><a onclick="change_price_ecu(5); change_text_ecu(5); change_price_total();">Motec-M800</a></li>
+						<li><a onclick="change_price_ecu(6); change_text_ecu(6);  change_price_total();">Motec-M880</a></li>
+						
+                    </ul>
+                </li>
+            </ul>
+        </div>
+	
+<div class="fixed-side-social-container">
+<a class="social-icon twitter-icon" href="https://twitter.com/YourProfile1" target="new" title="Share on Twitter"><span></span></a>
+<a class="social-icon facebook-icon" href="https://www.facebook.com/YourProfile" target="new" title="Share on Facebook"><span></span></a>
+<a class="social-icon google-icon" href="https://plus.google.com/106032972855787333251" target="new" title="Share on Google+"><span></span></a>
+</div>
+
+</div>
+</div>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+	<script src="js/main.js"></script>
+</body>
+
+</html>

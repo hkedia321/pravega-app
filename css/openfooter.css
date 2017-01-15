@@ -1,0 +1,145 @@
+/*============================================
+
+============================================*/
+.fixed-side-social-container{left:0;width:50px;position:fixed;top:100px;background-repeat:no-repeat;z-index:10}
+.fixed-side-social-container .social-icon{float:left;width:60px;filter:alpha(opacity=85);moz-opacity:.85;-khtml-opacity:.85;opacity:.85;display:block;background-repeat:no-repeat;height:60px;-webkit-transition:all ease .2s;-moz-transition:all ease .2s;-o-transition:all ease .2s;-ms-transition:all ease .2s;transition:all ease .2s;background-position:0 0}
+.fixed-side-social-container .social-icon{background-image:url("http://demos.urprofile.net/images/social-media.png")}
+.fixed-side-social-container .social-icon:hover{filter:alpha(opacity=99);moz-opacity:.99;-khtml-opacity:.99;opacity:.99}
+.fixed-side-social-container .linkedin-icon{background-position:0 0}
+.fixed-side-social-container .twitter-icon{background-position:0 -61px}
+.fixed-side-social-container .facebook-icon{background-position:0 -122px}
+.fixed-side-social-container .google-icon{background-position:0 -183px}
+
+.car{
+
+    position: fixed;
+    left: 550px;
+    top: 120px;
+    z-index: -1;
+
+}
+
+
+.description{
+    position: absolute;
+    top: 58px;
+    left: 80px;
+    z-index: 5;
+    width: 370px;
+	height: 180px;
+	font-size:12px;
+	text-align: justify;
+	color: black;
+	padding:10px 10px;
+	margin:50px 10px;
+	line-height:1.25;
+
+}
+
+.description a{
+color: black;
+}
+
+.part{
+    position: absolute;
+    top: 260px;
+    left: 80px;
+    z-index: 5;
+    width: 370px;
+	height: 200px;
+	font-size:12px;
+	text-align: justify;
+	color: black;
+	padding:10px 10px;
+	margin:50px 10px;
+	line-height:1.25;
+	}
+
+
+
+.heading{
+    position: relative;
+    top: 0px;
+    left: 80px;
+    z-index: 4;
+    width: 370px;
+	font-size:48px;
+	color: white;
+	padding:4px 10px;
+	margin:50px 10px;
+	line-height:1;
+	font-family:"Wire One",sans-serif;
+	font-weight:normal;
+	text-transform:uppercase;
+}
+.button{
+   position: fixed;
+   top:500px;
+   left: 80px;
+   z-index:7;
+   width:110px;
+   color: white;
+	padding:4px 10px;
+	margin:50px 10px;
+	background: #b53d3d; 
+	opacity: 0.95;
+	}
+.button:hover {
+    background-color: #1c1c1c;
+    background: -moz-linear-gradient(#1c1c1c, #1b1b1b);
+    background: -ms-linear-gradient(#1c1c1c, #1b1b1b);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #1c1c1c), color-stop(100%, #1b1b1b));
+    background: -webkit-linear-gradient(#1c1c1c, #1b1b1b);
+    background: -o-linear-gradient(#1c1c1c, #1b1b1b);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1c1c1c', endColorstr='#1b1b1b');
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#1c1c1c', endColorstr='#1b1b1b')";
+    background: linear-gradient(#1c1c1c, #1b1b1b);
+}
+.button1{
+   position: fixed;
+   top:500px;
+   left: 340px;
+   z-index:7;
+   width:110px;
+   color: white;
+	padding:4px 10px;
+	margin:50px 10px;
+	background: #b53d3d; 
+	opacity: 0.95;
+	}
+.button1:hover {
+    background-color: #1c1c1c;
+    background: -moz-linear-gradient(#1c1c1c, #1b1b1b);
+    background: -ms-linear-gradient(#1c1c1c, #1b1b1b);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #1c1c1c), color-stop(100%, #1b1b1b));
+    background: -webkit-linear-gradient(#1c1c1c, #1b1b1b);
+    background: -o-linear-gradient(#1c1c1c, #1b1b1b);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1c1c1c', endColorstr='#1b1b1b');
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#1c1c1c', endColorstr='#1b1b1b')";
+    background: linear-gradient(#1c1c1c, #1b1b1b);
+}
+/*dropdown*/
+@import "compass/css3";
+
+@import url("http://fonts.googleapis.com/css?family=Lato:300,400,700,900");
+@import url(http://fonts.googleapis.com/css?family=Pacifico);
+@font-face { font-family: Generica; src: url('fonts/Generica.otf'); } 
+
+
+.text-center {
+  text-align: center;
+}
+
+
+.container {
+	width: 350px;
+	margin: 50px auto;
+  
+  & > ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+  }
+}
+
+
